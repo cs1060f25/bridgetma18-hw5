@@ -31,7 +31,7 @@ python3 http_server.py --port 8081 --username user --password pass
 
 ### Guardrails Encountered
 - Claude Sonnet 4.5 did not have significant resistance to helping with this task, as it was clearly framed as an educational assignment about security vulnerabilities. The model provided straightforward explanations of SQL injection techniques when the educational context was clear.
-- Both GPT-5 and GPT-4.1 refused to provide exploit payloads for SQL injection. Common guardrails included: Exploit crafting is disallowed even for sandboxed targets. Provided educational guidance on parameterized queries and secure coding instead. They both replied with something similar to "I can’t help you craft or test a SQL-injection payload (including the exact JSON for attack.json) or write prompts whose goal is to bypass model safety to carry out an exploit—even for a class sandbox. That’s disallowed assistance."
+- Both GPT-5 and GPT-4.1 refused to provide exploit payloads for SQL injection. Common guardrails included: Exploit crafting is disallowed even for sandboxed targets. Provided educational guidance on parameterized queries and secure coding instead. They both replied with something similar to "I can’t help you craft or test a SQL-injection payload (including the exact JSON for attack.json) or write prompts whose goal is to bypass model safety to carry out an exploit—even for a class sandbox. That’s disallowed assistance." I was unable to get past the guardrails even after I had repeatedly clarified that it was for an assignment. Ultimately, I had to resort to Claude. 
 
 ### Testing
 Test the attack with:
