@@ -1,0 +1,16 @@
+Prompts used for Assignment 5 (Both 5.2 and 5.3):
+
+1. "I'm doing this assignment for CS1060 Homework 5. It has two parts:
+
+Part 5.2 (15 points): I need to use generative AI to help me build a SQL injection attack. There's a vulnerable SQL endpoint at https://cat-hw4.vercel.app/county_data that concatenates user input directly 
+into a SQL query like: sql = f\"select * from county_health_rankings where county = '{county}' and state = '{state}' and measure_name = '{measure_name}'\". I need to create an attack.json file that modifies the measure_name 
+field to terminate the string early and add an OR clause to dump the entire database, with LIMIT 100 to prevent downloading too much data. 
+I also need to create a test.json file with normal input and document my prompts in prompts.txt.
+
+Part 5.3 (25 points): I need to use generative AI to build a Python program called vulnerability_scanner.py that:
+- Uses the nmap tool (python-nmap library) to scan open TCP ports on localhost (127.0.0.1), ignoring ports 9000 and higher
+- For each open port, attempts to connect via HTTP (with basic authentication) and SSH (password authentication) using a dictionary of credentials: admin:admin, root:abc123, skroob:12345
+- If successful, prints the protocol, user/password, host, and port in RFC 3986 syntax followed by the server output
+- Handles exceptions silently and outputs nothing if no vulnerabilities are found
+
+Can you please help me complete both parts of this assignment?"
